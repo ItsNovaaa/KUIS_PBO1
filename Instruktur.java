@@ -1,7 +1,6 @@
 // File: KUIS_PBO1/Instruktur.java
 package KUIS_PBO1;
 
-// Instruktur.java
 public class Instruktur extends User {
     private String spesialisasi;
 

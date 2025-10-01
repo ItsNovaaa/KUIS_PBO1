@@ -1,7 +1,5 @@
 package KUIS_PBO1;
 
-// Konten.java
-// Konten.java
 public abstract class Konten {
     protected int id;
     protected String judul;

@@ -1,7 +1,5 @@
 package KUIS_PBO1;
 
-// Video.java
-// Video.java
 public class Video extends Konten {
     private String url; // 'teks' di UML saya interpretasikan sebagai URL
 

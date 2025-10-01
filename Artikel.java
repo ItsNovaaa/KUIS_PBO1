@@ -1,7 +1,5 @@
 package KUIS_PBO1;
 
-// Artikel.java
-// Artikel.java
 public class Artikel extends Konten {
     private String teks;
 

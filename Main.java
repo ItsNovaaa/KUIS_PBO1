@@ -5,16 +5,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    // Database untuk menyimpan user, kursus, dan pembayaran
     private static ArrayList<User> userDatabase = new ArrayList<>();
     private static ArrayList<Kursus> kursusDatabase = new ArrayList<>();
-    private static ArrayList<Pembayaran> pembayaranDatabase = new ArrayList<>(); // Ditambahkan
+    private static ArrayList<Pembayaran> pembayaranDatabase = new ArrayList<>(); 
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
-    // Blok statis untuk mengisi data dummy
     static {
-        // Data Instruktur dan Peserta
         Instruktur instrukturDummy = new Instruktur(101, "Budi Santoso", "budi@email.com", "pass123", "Java Programming");
         userDatabase.add(instrukturDummy);
         userDatabase.add(new Peserta(201, "Ani Lestari", "ani@email.com", "pass456", "Mahasiswa"));
@@ -29,7 +26,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // ... (Bagian main, registerFunction, dan loginFunction tetap sama) ...
         while (true) {
             System.out.println("\n===== APLIKASI KURSUS ONLINE =====");
             System.out.println("1. Register");
@@ -62,7 +58,6 @@ public class Main {
     }
 
     public static void registerFunction() {
-        // ... (Tidak ada perubahan di sini) ...
         System.out.println("\n--- Halaman Registrasi ---");
         System.out.println("1. Daftar sebagai Peserta");
         System.out.println("2. Daftar sebagai Instruktur");
@@ -105,7 +100,6 @@ public class Main {
     }
 
     public static void loginFunction() {
-        // ... (Tidak ada perubahan di sini) ...
         System.out.println("\n--- Halaman Login ---");
         System.out.print("Email: ");
         String emailLogin = scanner.nextLine();
@@ -134,7 +128,6 @@ public class Main {
 
     // Metode showInstrukturMenu tetap sama
     public static void showInstrukturMenu(Instruktur instruktur) {
-        // ... (Tidak ada perubahan di sini) ...
         while (true) {
             System.out.println("\n-- Menu Instruktur --");
             System.out.println("1. Buat Kursus Baru");
